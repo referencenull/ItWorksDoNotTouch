@@ -1,0 +1,15 @@
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.csproj.AssemblyReference.cache
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.AssemblyInfoInputs.cache
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.AssemblyInfo.cs
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.csproj.CoreCompileInputs.cache
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/BusinessApp
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/BusinessApp.deps.json
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/BusinessApp.runtimeconfig.json
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/BusinessApp.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/BusinessApp.pdb
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/refint/BusinessApp.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.pdb
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.genruntimeconfig.cache
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/ref/BusinessApp.dll
