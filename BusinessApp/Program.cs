@@ -47,14 +47,13 @@ namespace bestapp
                     return true;
                 case "6":
                     d.IsP();
-                    return true;
+                    return true;  
                 case "0":
                     return false;
                 default:
                     return true;
             }
         }
- 
         private static string CaptureInput()
         {
             Console.Write("Enter the string you want to modify: ");
