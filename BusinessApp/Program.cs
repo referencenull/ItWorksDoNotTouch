@@ -59,7 +59,7 @@ namespace bestapp
             Console.Write("Enter the string you want to modify: ");
             return Console.ReadLine();
         }
- 
+
         private static void ReverseString()
         {
             Console.Clear();

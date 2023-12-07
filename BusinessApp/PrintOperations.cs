@@ -26,6 +26,7 @@ public class Printoperations{
            }
            Console.ReadLine();
     }
+    
     public void PrintS()
     {
          int i, j, k, l, n;
