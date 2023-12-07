@@ -11,6 +11,7 @@ public class DoMath
            Console.ReadLine();
        }   
     }
+
     public void CheckLeap()
     {
         Console.Write("Enter a year: ");
@@ -27,13 +28,13 @@ public class DoMath
             Console.ReadLine();
     }
 
-    public void Isprime()
+    public void IsP()
     {
         int num;
-           bool Is_Prime_Number = true;
+           bool x = true;
            Console.WriteLine("Enter the Number to check Prime: ");
            num = int.Parse(Console.ReadLine());
-           for (int i = 2; i <= num / 2; i++){if (num % i == 0){ Console.WriteLine("Number is not Prime.");Is_Prime_Number = false; break;} } if (Is_Prime_Number == true) Console.WriteLine("Number is Prime.");
+           for (int i = 2; i <= num / 2; i++){if (num % i == 0){ Console.WriteLine("Number is not P.");x = false; break;} } if (x == true) Console.WriteLine("Number is P.");
            Console.ReadKey();
     }
 

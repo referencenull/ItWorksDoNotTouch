@@ -13,3 +13,9 @@
 /workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.pdb
 /workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.genruntimeconfig.cache
 /workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/ref/BusinessApp.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/Newtonsoft.Json.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.csproj.CopyComplete
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/Azure.AI.OpenAI.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/Azure.Core.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/workspaces/ItWorksDoNotTouch/BusinessApp/bin/Debug/net7.0/System.Memory.Data.dll

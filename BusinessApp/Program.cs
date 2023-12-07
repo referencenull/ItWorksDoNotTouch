@@ -46,7 +46,7 @@ namespace bestapp
                     d.Area();
                     return true;
                 case "6":
-                    d.Isprime();
+                    d.IsP();
                     return true;
                 case "0":
                     return false;
@@ -85,5 +85,6 @@ namespace bestapp
             Console.Write("\r\nPress Enter to return to Main Menu");
             Console.ReadLine();
         }
+        
     }
 }
