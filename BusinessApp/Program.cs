@@ -25,6 +25,7 @@ namespace bestapp
             Console.WriteLine("4) Print star");
             Console.WriteLine("5) Calculate area");
             Console.WriteLine("6) Is number p");
+            Console.WriteLine("7) Calculate square root");
             Console.WriteLine("0) Exit");
             Console.Write("\r\nSelect an option: ");
  
@@ -48,6 +49,9 @@ namespace bestapp
                 case "6":
                     d.IsP();
                     return true;  
+                case "7":
+                    d.CalculateSquareRoot();
+                    return true;
                 case "0":
                     return false;
                 default:
