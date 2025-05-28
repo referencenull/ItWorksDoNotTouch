@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iSp8XgrMcn37lB7g5ZVJs5GVNOClZGzv+xG95tSCIPGiao+9zIGren996GIXIHBvTv2LI1qSVh/QcRQyqaNFrg==",
+  "dgSpecHash": "whIM2buIh+F8IVvPZzxhJ70iws7OH8N6sBlGQw2lLE0U7TwS2ufDr8YaA3nTzInixoZBjsCBnAOi7Coe65HLxw==",
   "success": true,
   "projectFilePath": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
   "expectedPackageFiles": [
@@ -14,10 +14,7 @@
     "/home/runner/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/home/runner/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
     "/home/runner/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
-    "/home/runner/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512",
-    "/home/runner/.nuget/packages/microsoft.netcore.app.ref/7.0.20/microsoft.netcore.app.ref.7.0.20.nupkg.sha512",
-    "/home/runner/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.20/microsoft.aspnetcore.app.ref.7.0.20.nupkg.sha512",
-    "/home/runner/.nuget/packages/microsoft.netcore.app.host.linux-x64/7.0.20/microsoft.netcore.app.host.linux-x64.7.0.20.nupkg.sha512"
+    "/home/runner/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }
