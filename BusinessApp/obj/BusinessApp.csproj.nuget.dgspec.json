@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj": {}
+    "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj": {}
   },
   "projects": {
-    "/workspaces/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj": {
+    "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
+        "projectUniqueName": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
         "projectName": "BusinessApp",
-        "projectPath": "/workspaces/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
-        "packagesPath": "/home/codespace/.nuget/packages/",
-        "outputPath": "/workspaces/ItWorksDoNotTouch/BusinessApp/obj/",
+        "projectPath": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
+        "packagesPath": "/home/runner/.nuget/packages/",
+        "outputPath": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/codespace/.nuget/NuGet/NuGet.Config"
+          "/home/runner/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -58,12 +58,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[7.0.20, 7.0.20]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.20, 7.0.20]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/RuntimeIdentifierGraph.json"
         }
       }
     }

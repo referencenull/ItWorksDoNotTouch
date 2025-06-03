@@ -38,4 +38,22 @@ public class DoMath
            Console.ReadKey();
     }
 
+    public void CalculateSquareRoot()
+    {
+        Console.Write("Enter a number: ");
+        string input = Console.ReadLine();
+        
+        if (double.TryParse(input, out double number) && number >= 0)
+        {
+            double sqrtResult = Math.Sqrt(number);
+            Console.WriteLine("Square root of {0} is: {1}", number, sqrtResult);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input. Please enter a valid positive number.");
+        }
+        
+        Console.WriteLine("Press Enter to return to the main menu.");
+        Console.ReadLine();
+    }
 }
