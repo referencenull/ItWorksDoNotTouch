@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
+    "net8.0": {
       "Azure.AI.OpenAI/1.0.0-beta.9": {
         "type": "package",
         "dependencies": {
@@ -382,35 +382,35 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
+    "net8.0": [
       "Azure.AI.OpenAI >= 1.0.0-beta.9",
       "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
-    "/home/codespace/.nuget/packages/": {}
+    "/home/runner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/workspaces/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
+      "projectUniqueName": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
       "projectName": "BusinessApp",
-      "projectPath": "/workspaces/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
-      "packagesPath": "/home/codespace/.nuget/packages/",
-      "outputPath": "/workspaces/ItWorksDoNotTouch/BusinessApp/obj/",
+      "projectPath": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/BusinessApp.csproj",
+      "packagesPath": "/home/runner/.nuget/packages/",
+      "outputPath": "/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/codespace/.nuget/NuGet/NuGet.Config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net8.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {}
         }
       },
@@ -421,8 +421,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "dependencies": {
           "Azure.AI.OpenAI": {
             "target": "Package",
@@ -449,7 +449,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/dotnet/7.0.306/sdk/7.0.306/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.115/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

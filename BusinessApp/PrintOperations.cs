@@ -72,4 +72,52 @@ public class Printoperations{
            Console.ReadLine();
     }
 
+    public void PrintRandomAsciiArt()
+    {
+        Console.Clear();
+        Console.WriteLine("Random Cool ASCII Image");
+        Console.WriteLine();
+        
+        string[] asciiImages = {
+            @"       /\   /\   
+      (  . .)
+       )   (   
+      (  v  ) 
+    ^^  ^^^  ^^",
+            
+            @"     /\_/\  
+    ( o.o ) 
+     > ^ <",
+            
+            @"   .-''''''-.
+  /         \
+ |  O     O  |
+ |     >     |
+  \    ___  /
+   '-.......-'",
+            
+            @"    ___
+   (o o)
+  (  V  )
+ --m-m--",
+            
+            @"      /\_/\
+     ( o.o )
+      > ^ <
+     _) (_",
+            
+            @"    (\   /)
+   ( ._. )
+  o_('v')_o"
+        };
+        
+        Random random = new Random();
+        int randomIndex = random.Next(asciiImages.Length);
+        
+        Console.WriteLine(asciiImages[randomIndex]);
+        Console.WriteLine();
+        Console.Write("Press Enter to return to Main Menu");
+        Console.ReadLine();
+    }
+
 }
