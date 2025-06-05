@@ -18,15 +18,24 @@ namespace bestapp
             DoMath d = new DoMath(); 
 
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Choose an option:");
+            Console.ResetColor();
+            
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("1) Reverse String");
             Console.WriteLine("2) Remove Whitespace");
             Console.WriteLine("3) Print");
             Console.WriteLine("4) Print star");
             Console.WriteLine("5) Calculate area");
             Console.WriteLine("6) Is number p");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("0) Exit");
+            Console.ResetColor();
+            
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("\r\nSelect an option: ");
+            Console.ResetColor();
  
             switch (Console.ReadLine())
             {
@@ -56,14 +65,18 @@ namespace bestapp
         }
         private static string CaptureInput()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.Write("Enter the string you want to modify: ");
+            Console.ResetColor();
             return Console.ReadLine();
         }
 
         private static void ReverseString()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Reverse String");
+            Console.ResetColor();
  
             char[] charArray = CaptureInput().ToCharArray();
             Array.Reverse(charArray);
@@ -73,15 +86,24 @@ namespace bestapp
         private static void RemoveWhitespace()
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Cyan;
             Console.WriteLine("Remove Whitespace");
+            Console.ResetColor();
  
             DisplayResult(CaptureInput().Replace(" ", ""));
         }
  
         private static void DisplayResult(string message)
         {
-            Console.WriteLine($"\r\nYour modified string is: {message}");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"\r\nYour modified string is: ");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine(message);
+            Console.ResetColor();
+            
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.Write("\r\nPress Enter to return to Main Menu");
+            Console.ResetColor();
             Console.ReadLine();
         }
         
