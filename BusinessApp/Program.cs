@@ -6,6 +6,8 @@ namespace bestapp
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.Gray;
+            Console.Clear();
             bool showMenu = true;
             while (showMenu)
             {
