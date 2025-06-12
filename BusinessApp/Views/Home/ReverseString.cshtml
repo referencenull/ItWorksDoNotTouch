@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Reverse String";
+}
+
+<h2>Reverse String</h2>
+<p>Enter a string to reverse its characters:</p>
+
+<div class="form-group">
+    <label for="inputText">Enter your string:</label>
+    <input type="text" id="inputText" placeholder="Type your text here..." />
+</div>
+
+<button onclick="reverseString()">Reverse String</button>
+
+<div id="result" class="result" style="display: none;">
+    <h3>Result:</h3>
+    <p id="resultText"></p>
+</div>
+
+<script>
+async function reverseString() {
+    const input = document.getElementById('inputText').value;
+    
+    if (!input.trim()) {
+        alert('Please enter some text');
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/string/reverse', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ input: input })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('resultText').textContent = data.result;
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert('Error processing request');
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+}
+</script>

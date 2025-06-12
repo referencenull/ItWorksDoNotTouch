@@ -1,0 +1,52 @@
+@{
+    ViewData["Title"] = "Prime Check";
+}
+
+<h2>Prime Number Checker</h2>
+<p>Enter a number to check if it's prime:</p>
+
+<div class="form-group">
+    <label for="inputNumber">Number:</label>
+    <input type="number" id="inputNumber" min="1" placeholder="Enter a positive number" />
+</div>
+
+<button onclick="checkPrime()">Check Prime</button>
+
+<div id="result" class="result" style="display: none;">
+    <h3>Result:</h3>
+    <p>Number: <span id="numberValue"></span></p>
+    <p id="primeResult"></p>
+</div>
+
+<script>
+async function checkPrime() {
+    const number = parseInt(document.getElementById('inputNumber').value);
+    
+    if (isNaN(number) || number < 1) {
+        alert('Please enter a valid positive number');
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/math/prime-check', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ number: number })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('numberValue').textContent = data.number;
+            const resultText = data.isPrime ? 'is a prime number' : 'is not a prime number';
+            document.getElementById('primeResult').textContent = `${data.number} ${resultText}`;
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert('Error processing request');
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+}
+</script>

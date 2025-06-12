@@ -41,3 +41,14 @@
 /home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.pdb
 /home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.genruntimeconfig.cache
 /home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/ref/BusinessApp.dll
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.MvcApplicationPartsAssemblyInfo.cache
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.RazorAssemblyInfo.cache
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/BusinessApp.RazorAssemblyInfo.cs
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets.build.json
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets.development.json
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets/msbuild.BusinessApp.Microsoft.AspNetCore.StaticWebAssets.props
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets/msbuild.build.BusinessApp.props
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.BusinessApp.props
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.BusinessApp.props
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/staticwebassets.pack.json
+/home/runner/work/ItWorksDoNotTouch/ItWorksDoNotTouch/BusinessApp/obj/Debug/net7.0/scopedcss/bundle/BusinessApp.styles.css

@@ -1,89 +1,33 @@
-﻿using System;
- 
-namespace bestapp
+﻿using bestapp.Services;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+builder.Services.AddControllersWithViews();
+
+// Register our services
+builder.Services.AddScoped<IStringService, StringService>();
+builder.Services.AddScoped<IPatternService, PatternService>();
+builder.Services.AddScoped<IMathService, MathService>();
+
+var app = builder.Build();
+
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
 {
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            bool showMenu = true;
-            while (showMenu)
-            {
-                showMenu = MainMenu();
-            }
-        }
-        private static bool MainMenu()
-        {
-            Printoperations p = new Printoperations();
-            DoMath d = new DoMath(); 
-
-            Console.Clear();
-            Console.WriteLine("Choose an option:");
-            Console.WriteLine("1) Reverse String");
-            Console.WriteLine("2) Remove Whitespace");
-            Console.WriteLine("3) Print");
-            Console.WriteLine("4) Print star");
-            Console.WriteLine("5) Calculate area");
-            Console.WriteLine("6) Is number p");
-            Console.WriteLine("0) Exit");
-            Console.Write("\r\nSelect an option: ");
- 
-            switch (Console.ReadLine())
-            {
-                case "1":
-                    ReverseString();
-                    return true;
-                case "2":
-                    RemoveWhitespace();
-                    return true;
-                case "3":
-                    p.PrintSomething();
-                    return true;
-                case "4":
-                    p.PrintS();
-                    return true;
-                case "5":
-                    d.Area();
-                    return true;
-                case "6":
-                    d.IsP();
-                    return true;  
-                case "0":
-                    return false;
-                default:
-                    return true;
-            }
-        }
-        private static string CaptureInput()
-        {
-            Console.Write("Enter the string you want to modify: ");
-            return Console.ReadLine();
-        }
-
-        private static void ReverseString()
-        {
-            Console.Clear();
-            Console.WriteLine("Reverse String");
- 
-            char[] charArray = CaptureInput().ToCharArray();
-            Array.Reverse(charArray);
-            DisplayResult(String.Concat(charArray));
-        }
- 
-        private static void RemoveWhitespace()
-        {
-            Console.Clear();
-            Console.WriteLine("Remove Whitespace");
- 
-            DisplayResult(CaptureInput().Replace(" ", ""));
-        }
- 
-        private static void DisplayResult(string message)
-        {
-            Console.WriteLine($"\r\nYour modified string is: {message}");
-            Console.Write("\r\nPress Enter to return to Main Menu");
-            Console.ReadLine();
-        }
-        
-    }
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.Run();

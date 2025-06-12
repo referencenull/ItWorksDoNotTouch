@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Star Pattern";
+}
+
+<h2>Star Pattern</h2>
+<p>Enter the number of rows to generate a star pattern:</p>
+
+<div class="form-group">
+    <label for="inputRows">Number of rows:</label>
+    <input type="number" id="inputRows" min="1" max="10" placeholder="Enter number of rows (1-10)" />
+</div>
+
+<button onclick="generateStarPattern()">Generate Pattern</button>
+
+<div id="result" class="result" style="display: none;">
+    <h3>Result:</h3>
+    <pre id="resultText"></pre>
+</div>
+
+<script>
+async function generateStarPattern() {
+    const rows = parseInt(document.getElementById('inputRows').value);
+    
+    if (!rows || rows < 1 || rows > 10) {
+        alert('Please enter a number between 1 and 10');
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/pattern/star', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ rows: rows })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('resultText').textContent = data.pattern;
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert('Error processing request');
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+}
+</script>
