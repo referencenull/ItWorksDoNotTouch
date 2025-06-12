@@ -1,0 +1,51 @@
+@{
+    ViewData["Title"] = "Circle Area";
+}
+
+<h2>Circle Area Calculator</h2>
+<p>Enter the radius to calculate the area of a circle:</p>
+
+<div class="form-group">
+    <label for="inputRadius">Radius:</label>
+    <input type="number" id="inputRadius" step="0.01" min="0" placeholder="Enter radius" />
+</div>
+
+<button onclick="calculateArea()">Calculate Area</button>
+
+<div id="result" class="result" style="display: none;">
+    <h3>Result:</h3>
+    <p>Radius: <span id="radiusValue"></span></p>
+    <p>Area: <span id="areaValue"></span></p>
+</div>
+
+<script>
+async function calculateArea() {
+    const radius = parseFloat(document.getElementById('inputRadius').value);
+    
+    if (isNaN(radius) || radius < 0) {
+        alert('Please enter a valid positive number for radius');
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/math/circle-area', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ radius: radius })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('radiusValue').textContent = data.radius;
+            document.getElementById('areaValue').textContent = data.area.toFixed(4);
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert('Error processing request');
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+}
+</script>

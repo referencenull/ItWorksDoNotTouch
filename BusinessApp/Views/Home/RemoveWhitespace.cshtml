@@ -1,0 +1,49 @@
+@{
+    ViewData["Title"] = "Remove Whitespace";
+}
+
+<h2>Remove Whitespace</h2>
+<p>Enter a string to remove all spaces:</p>
+
+<div class="form-group">
+    <label for="inputText">Enter your string:</label>
+    <input type="text" id="inputText" placeholder="Type your text here..." />
+</div>
+
+<button onclick="removeWhitespace()">Remove Whitespace</button>
+
+<div id="result" class="result" style="display: none;">
+    <h3>Result:</h3>
+    <p id="resultText"></p>
+</div>
+
+<script>
+async function removeWhitespace() {
+    const input = document.getElementById('inputText').value;
+    
+    if (!input.trim()) {
+        alert('Please enter some text');
+        return;
+    }
+
+    try {
+        const response = await fetch('/api/string/remove-whitespace', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ input: input })
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            document.getElementById('resultText').textContent = data.result;
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert('Error processing request');
+        }
+    } catch (error) {
+        alert('Error: ' + error.message);
+    }
+}
+</script>
